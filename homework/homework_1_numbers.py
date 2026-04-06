@@ -6,12 +6,12 @@ print('Квадрат:', result)
 
 # 2. “Середнє трьох чисел”
 
-print('2. “Середнє трьох чисел”. Введіть три числа через кому:')
-three_numbers = input()
-split_three_numbers = three_numbers.replace(' ', '').split(',')
-num_list = list(map(int, split_three_numbers))
+print('2. “Середнє трьох чисел”. (Насправді, середнє будь-якої кількості чисел). Введіть числа через кому:')
+raw_numbers = input()
+split_raw_numbers = raw_numbers.replace(' ', '').split(',')
+num_list = list(map(int, split_raw_numbers))
 average = sum(num_list) / len(num_list)
-print('your average:', round(average, 1))
+print('Середнє:', round(average, 1))
 
 # 3. “Перетворення хвилин у години”
 
