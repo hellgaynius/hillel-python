@@ -17,7 +17,7 @@ def do_calculations(l):
 
     for index, num in enumerate(l):
         if index == 0 or index % 2 == 0:
-            numbers_sum += num
+            numbers_sum += num  # або додавати елементи до окремого списка з .append() і порахувати суму за допомогою sum()
     result = numbers_sum * l[-1]
     print(result)
 
