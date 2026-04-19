@@ -3,6 +3,8 @@ list_2 = [0]
 list_3 = [1, 0, 13, 0, 0, 0, 5]
 list_4 = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
 
+lists = [list_1, list_2, list_3, list_4]
+
 # Expected results
 # [0, 1, 0, 12, 3] -> [1, 12, 3, 0, 0]
 # [0] -> [0]
@@ -14,9 +16,7 @@ def zeros_to_end(l):
         if num == 0:
             l.pop(index)
             l.append(num)
-    return l
+    print(l)
 
-print(zeros_to_end(list_1))
-print(zeros_to_end(list_2))
-print(zeros_to_end(list_3))
-print(zeros_to_end(list_4))
+for l in lists:
+    zeros_to_end(l)
