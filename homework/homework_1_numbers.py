@@ -24,8 +24,7 @@ def get_ending(number, forms):
         return forms[0]
     elif 2 <= number <= 4:
         return forms[1]
-    else:
-        return forms[2]
+    return forms[2]
 
 print('3. “Перетворення хвилин у години”. Введіть кількість хвилин:')
 mins_input = int(input())
