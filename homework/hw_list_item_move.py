@@ -1,0 +1,5 @@
+print("Enter list elements separated by a comma:")
+raw_list_elements = input()
+list_elements = raw_list_elements.replace(' ', '').split(',')
+list_elements.insert(0, list_elements.pop())
+print(list_elements)
