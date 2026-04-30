@@ -1,4 +1,6 @@
 def say_hi(name, number):
-    return f'Hi. My name is {name} and I\'m {number} years old.'
+    return f'Hi. My name is {name} and I\'m {number} years old'
 
-print(say_hi('John', '12'))
+assert say_hi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old", 'Test1'
+assert say_hi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old", 'Test2'
+print('ОК')
