@@ -1,7 +1,9 @@
 def correct_sentence(text):
+    if not text:
+        return 'Empty string'
     if text[-1] != '.':
-        text.push('.')
-    return text.capitalize()
+        text += '.'
+    return text[0].upper() + text[1:]
 
 assert correct_sentence("greetings, friends") == "Greetings, friends.", 'Test1'
 assert correct_sentence("hello") == "Hello.", 'Test2'

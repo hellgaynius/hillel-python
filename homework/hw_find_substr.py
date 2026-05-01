@@ -1,8 +1,9 @@
 def second_index(text, some_str):
-  first_index = text.find(some_str)
-  if first_index == -1:
+  first_idx = text.find(some_str)
+  if first_idx == -1:
       return 'No substring found'
-  return text.find(some_str, first_index)
+  second_idx = text.find(some_str, first_idx + 1)
+  return None if second_idx == -1 else second_idx
 
 assert second_index("sims", "s") == 3, 'Test1'
 assert second_index("find the river", "e") == 12, 'Test2'
